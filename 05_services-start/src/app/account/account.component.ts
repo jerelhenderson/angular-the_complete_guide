@@ -6,8 +6,9 @@ import { LoggingService } from '../shared/logging.service';
   selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
-  // Tells Angular to create/provide the service
-  providers: [LoggingService, AccountsService]
+  /* Tells Angular to create/provide the service
+  AccountsService isn't called here, because it would override AccountsService called from the app.component */
+  // providers: [LoggingService]
 })
 export class AccountComponent {
   @Input() account: {name: string, status: string};
@@ -21,6 +22,6 @@ export class AccountComponent {
 
   onSetTo(accountStatus: string) {
     this.accountsService.updateStatus(this.id, accountStatus);
-    this.loggingService.logStatusChange(accountStatus);
+    // this.loggingService.logStatusChange(accountStatus);
   }
 }
