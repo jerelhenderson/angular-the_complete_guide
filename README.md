@@ -16,8 +16,8 @@ Now that you have installed the prerequisites, loading the projects should also 
 ## Main Event
 The zeroth project is also the main project and is built incrementally throughout the course. The projects following are mini-projects
 where the concepts needed to build the course project are learned bit-by-bit.
- 0. Course Project
- 1. The Basics
- 2. Components & Databinding Deep Dive
- 3. Components & Databinding Assignment
- 4. Directives Deep Dive
+0. [Course Project](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/00_course-project)
+1. [The Basics](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/01_thebasics-start)
+2. [Components & Databinding Deep Dive](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/02_cmp-databinding-start)
+3. [Components & Databinding Assignment](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/03_cmp-databinding-assignment-start)
+4. [Directives Deep Dive](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/04_directives-start)
