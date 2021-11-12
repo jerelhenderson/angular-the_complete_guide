@@ -1,12 +1,12 @@
 # Angular - The Complete Guide
 This repository contains a collection of mini-projects + a complete web application developed with Angular2.
-The projects follow the Udemy course [https://www.udemy.com/course/the-complete-guide-to-angular-2/](Angular - The Complete Edition).
+The projects follow the Udemy course [Angular - The Complete Course](https://www.udemy.com/course/the-complete-guide-to-angular-2/).
 
 ## Bare Necessities
 In order to check these projects out, you will need...
 1. ...a computer 🥁
-2. ...to install [https://nodejs.org](nodejs)
-3. ...to install [https://angular.io/guide/setup-local](Angular CLI)
+2. ...to install [nodejs](https://nodejs.org)
+3. ...to install [Angular CLI](https://angular.io/guide/setup-local)
 
 ## Up and Running
 Now that you have installed the prerequisites, loading the projects should also be a cinch!
@@ -16,8 +16,8 @@ Now that you have installed the prerequisites, loading the projects should also 
 ## Main Event
 The zeroth project is also the main project and is built incrementally throughout the course. The projects following are mini-projects
 where the concepts needed to build the course project are learned bit-by-bit.
-* 0. Course Project
-* 1. The Basics
-* 2a. Components & Databinding Deep Dive
-* 2b. Components & Databinding Assignment
-* 3. Directives Deep Dive
+ 0. Course Project
+ 1. The Basics
+ 2. Components & Databinding Deep Dive
+ 3. Components & Databinding Assignment
+ 4. Directives Deep Dive

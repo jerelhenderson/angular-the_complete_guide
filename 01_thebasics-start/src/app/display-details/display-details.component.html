@@ -1,0 +1,4 @@
+<button class="btn btn-primary" (click)="onToggle()">Display Details</button>
+<p *ngIf="show">Content of my choice</p>
+<p *ngFor="let date of datesArray; let i = index"
+[ngStyle]="{'background-color': i + 1 > 4 ? 'blue' : 'transparent'}">{{ date }}</p>
