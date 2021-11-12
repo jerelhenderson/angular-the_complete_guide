@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AccountsService } from '../shared/accounts.service';
 import { LoggingService } from '../shared/logging.service';
 
 @Component({
@@ -6,20 +7,20 @@ import { LoggingService } from '../shared/logging.service';
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
   // Tells Angular to create/provide the service
-  providers: [LoggingService]
+  providers: [LoggingService, AccountsService]
 })
 export class AccountComponent {
   @Input() account: {name: string, status: string};
   @Input() id: number;
-  @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
 
-    /* Bind the LoggingService component (logging.service) to the value to the property loggingService
+  /* Bind the LoggingService (logging.service) and AccountsService (accounts.service) components to the value to the property loggingService
   Services should not be instantiated manually, but by using the below process, so Angular is aware
   of how the service intergrates into the web application */
-  constructor(private loggingService: LoggingService) {}
+  constructor(private loggingService: LoggingService,
+    private accountsService: AccountsService) {}
 
   onSetTo(accountStatus: string) {
-    this.statusChanged.emit({id: this.id, newStatus: accountStatus});
+    this.accountsService.updateStatus(this.id, accountStatus);
     this.loggingService.logStatusChange(accountStatus);
   }
 }
