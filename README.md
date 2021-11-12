@@ -16,8 +16,8 @@ Now that you have installed the prerequisites, loading the projects should also 
 ## Main Event
 The zeroth project is also the main project and is built incrementally throughout the course. The projects following are mini-projects
 where the concepts needed to build the course project are learned bit-by-bit.
-* 00. Course Project
-* 01. The Basics
-* 02a. Components & Databinding Deep Dive
-* 02b. Components & Databinding Assignment
-* 03. Directives Deep Dive
+* 0. Course Project
+* 1. The Basics
+* 2a. Components & Databinding Deep Dive
+* 2b. Components & Databinding Assignment
+* 3. Directives Deep Dive
