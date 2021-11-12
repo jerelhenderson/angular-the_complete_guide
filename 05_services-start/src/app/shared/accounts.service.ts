@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { EventEmitter, Injectable } from "@angular/core";
 import { LoggingService } from "./logging.service";
 
 // Service metadata letting Angular know a service where service data is injected
@@ -19,6 +19,9 @@ export class AccountsService {
       status: 'unknown'
     }
   ];
+
+  // Emits the change of status
+  statusUpdated = new EventEmitter<string>();
 
   constructor(private loggingService: LoggingService) {}
 

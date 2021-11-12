@@ -15,7 +15,12 @@ export class NewAccountComponent {
   Services should not be instantiated manually, but by using the below process, so Angular is aware
   of how the service intergrates into the web application */
   constructor(private loggingService: LoggingService,
-    private accountsService: AccountsService) {}
+    private accountsService: AccountsService) {
+      // Cross component communication through accounts.service
+      this.accountsService.statusUpdated.subscribe(
+        (status: string) => alert('New status: ' + status)
+      )
+    }
 
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountsService.addAccount(accountName, accountStatus);

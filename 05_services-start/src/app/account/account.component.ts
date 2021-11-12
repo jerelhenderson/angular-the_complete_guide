@@ -23,5 +23,7 @@ export class AccountComponent {
   onSetTo(accountStatus: string) {
     this.accountsService.updateStatus(this.id, accountStatus);
     // this.loggingService.logStatusChange(accountStatus);
+    // Below status is received from accounts.service
+    this.accountsService.statusUpdated.emit(accountStatus);
   }
 }
