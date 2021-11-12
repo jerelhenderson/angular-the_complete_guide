@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-5">
+    <!-- Listens for the click-selected recipe from recipe-list.component -->
+    <app-recipe-list (passedinRecipe)="storePassedInRecipe = $event"></app-recipe-list>
+  </div>
+  <div class="col-md-7">
+    <!-- Recieves the click-selected recipe passed from the recipe-item.component -->
+    <!-- [recipe] is received from the recipes.component and can be sent out (to recipe-detail.component) -->
+    <!-- If no recipe is clicked (no click-selection passed down from component), displays a default blurb  -->
+    <app-recipe-detail *ngIf="storePassedInRecipe; else defaultText"
+    [recipe]="storePassedInRecipe"></app-recipe-detail>
+    <ng-template #defaultText>
+      <p>Please select a Recipe!</p>
+    </ng-template>
+  </div>
+</div>

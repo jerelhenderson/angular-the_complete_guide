@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+      <!-- [recipe] refers to the "recipe" property in the recipe-item.component -->
+      <!-- Receives the click-selection from recipe-list.component -->
+      <app-recipe-item *ngFor="let eachRecipe of recipes" [recipe]="eachRecipe"
+      (selectedRecipe)="onSelectedRecipe(eachRecipe)"></app-recipe-item>
+  </div>
+</div>

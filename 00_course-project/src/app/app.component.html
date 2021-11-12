@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Triggers for switching between active page -->
+      <app-header (selectedHeaderLink)="onSelected($event)"></app-header>
+      <app-recipes *ngIf="selectedHeaderLink === 'cookingTime'"></app-recipes>
+      <app-shopping-list *ngIf="selectedHeaderLink === 'shoppingTime'"></app-shopping-list>
+    </div>
+  </div>
+</div>
