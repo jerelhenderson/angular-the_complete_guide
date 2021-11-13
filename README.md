@@ -23,3 +23,4 @@ where the concepts needed to build the course project are learned bit-by-bit.
 3. [Components & Databinding Assignment](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/03_cmp-databinding-assignment-start)
 4. [Directives Deep Dive](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/04_directives-start)
 5. [Services & Dependency Injection](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/05_services-start)
+6. [Services & Dependency Inection Assignment](https://github.com/jerelhenderson/angular-the_complete_guide/tree/master/06_services-assignment-start)
